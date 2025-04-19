@@ -1,0 +1,12 @@
+#root {
+  margin: 0;
+}
+
+.CentealDiv{
+  background-image: url('/assets/rickyrecap.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+

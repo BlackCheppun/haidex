@@ -1,0 +1,218 @@
+@import "../../index.css";
+
+.apropos-container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6rem;
+}
+
+.apropos-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color-primary-darken);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.apropos-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.founder-card {
+    background: var(--color-white);
+    width: 100%;
+    max-width: 360px;
+    padding: 1rem 1.5rem;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid var(--color-primary);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.founder-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.founder-card > .founder-title{
+    color : var(--color-seconday);
+}
+
+.founder-name,
+.founder-name-inline {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary-darken);
+    margin-top: 1rem;
+}
+
+.founder-title,
+.founder-title-inline {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-primary-darken);
+    margin-bottom: 1rem;
+}
+
+.founder-card p {
+    font-size: 1.13rem;;
+    letter-spacing: 2px;
+    color: var(--color-text-grayscale);
+    margin-top: 0.5rem;
+}
+
+.founder-socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.founder-social-btn {
+    color: var(--color-text-grayscale);
+    font-size: 1.5rem;
+}
+
+.apropos-text {
+    flex: 1;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.text-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.highlight {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-primary-darken);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.highlight-main {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary-darken);
+}
+
+.highlight-sub {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--color-primary-darken);
+}
+
+.know-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #010F39;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 48px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    cursor: pointer;
+    width: fit-content;
+    transition: background 0.3s;
+}
+
+.text-paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.text-paragraphs p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #1A171B;
+}
+
+.apropos-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
+    justify-content: center;
+}
+
+.contact-card {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--color-white);
+    border: 3px solid var(--color-dark-blue);
+    border-radius: 50px;
+    padding-right: 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-dark-blue);
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.contact-card:hover {
+    transform: scale(1.03);
+}
+
+.contact-icon {
+    background: var(--color-dark-blue);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 50%;
+    font-size: 1.25rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .apropos-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .know-more-btn {
+        gap: 3rem;
+        margin : 0 auto;
+    }
+
+    .contact-card {
+        justify-content: center;
+    }
+
+    .highlight,  .highlight-main,  .highlight-sub{
+        display: none;
+    }
+    
+    .apropos-text{
+        flex-direction: column-reverse;    
+    }
+
+    .founder-title-inline, .founder-name-inline{
+        text-align: center;
+    }
+}
+
+@media  (max-width: 480px) {
+    .founder-card {
+        max-width: 250px;
+    }
+    
+}

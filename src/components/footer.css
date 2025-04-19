@@ -1,0 +1,228 @@
+@import '../index.css';
+
+p {
+    margin : 0;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Center vertically */
+    align-items: center;      /* Center horizontally */
+    width: 100%;
+    padding: 120px 0 120px 0;
+    color: var(--color-white);
+    background-color: var(--color-primary-darken);
+}
+
+
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    margin : 0 auto;
+    align-items: center; /* Ensure vertical centering */
+    width: 80%;
+    color: var(--color-white);
+    margin-bottom: 150px;
+    gap : 200px;
+}
+
+.footerTitle {
+    font-size: 80px;
+    width : 30%;
+    font-weight: 700;
+    color: var(--color-white);
+    text-align: left; /* Align the text on smaller screens */
+}
+
+.FooterDescp {
+    width : 45%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 400;
+    gap  :40px;
+    color: var(--color-white);
+}
+
+.FooterContactBtn {
+    display: inline-block;
+    padding: 18px 57px;
+    font-size: 20px;
+    width: fit-content;
+    font-weight: 500;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.FooterDescpP {
+    text-align: left;
+    width: 90%;
+}
+
+.footerDetails {
+    width : 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--color-white);
+}
+
+.footerDetailsLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
+.footerSocials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.footerSubTitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.footerSocialsIcons {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 27px;
+}
+
+.footerContacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footerContacts a {
+    text-decoration: none;
+    color: var(--color-text-grayscale);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.footerTerms p{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-text-grayscale);
+}
+
+.FooterLogo {
+    width: 169px;
+}
+
+
+.footerend{
+    margin-top: 16px;
+    color : var(--color-text-grayscale);
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .footerTop {
+        margin-bottom: 80px;
+        flex-direction: column;
+        align-items: center; /* Center the footer top */
+        gap : 40px; /* Adjust gap for smaller screens */
+    }
+
+    .footerTitle, .FooterDescp {
+        width: 100%;
+        text-align: center; /* Center title */
+    }
+
+    .FooterDescpP {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerDetails {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footerDetailsLogo,
+    .footerDetailsText,
+    .footerContacts,
+    .footerTerms {
+        flex: 1 1 200px;
+        align-items: center;
+    }
+
+
+    .footerend {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerTop {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .footerTitle {
+      font-size: 42px;
+      width: 100%;
+    }
+  
+    .FooterDescp {
+      width: 100%;
+      align-items: center;
+    }
+  
+    .FooterDescpP {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .footerDetails {
+      width: 100%;
+      gap: 40px;
+    }
+  
+    .footerDetailsLogo,
+    .footerDetailsText,
+    .footerContacts,
+    .footerTerms {
+      width: 100%;
+      align-items: center;
+    }
+  
+    .footerSocials {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .footerend {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 0;
+    }
+  }
+  

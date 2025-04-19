@@ -29,14 +29,12 @@ function Projets() {
   const [currentSlide, setCurrentSlide] = React.useState(0)
 
   const [sliderRef, slider] = useKeenSlider({
-    initial: 0,
-    loop: true,
     slideChanged(s) {
       setCurrentSlide(s.track.details.rel);
     },
     breakpoints: {
       "(min-width: 300px)": {
-        slides: { perView: 1, spacing: 1000 },
+        slides: { perView: 1, spacing: 10 },
       },
       "(min-width: 1000px)": {
         slides: { perView: 3, spacing: 10 },

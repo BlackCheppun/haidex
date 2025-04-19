@@ -6,34 +6,34 @@ import CardExpertise from './CardExpertise'
 const elements = {
     0: {
         title: "Courant fort",
-        imgURL: "../../../public/assets/expertise/eletricity-tower.jpg",
+        imgURL: "/assets/expertise/eletricity-tower.jpg",
         listePF: ["Installation électrique", "Maintenance électrique", "Mise en conformité", "Rénovation électrique"]
     }
     ,
     1: {
         title: "Courant faible",
-        imgURL: "../../../public/assets/expertise/electrician.jpg",
+        imgURL: "/assets/expertise/electrician.jpg",
         listePF: ["Installation électrique", "Maintenance électrique", "Mise en conformité", "Rénovation électrique"]
     }
     ,
     2: {
         title: "Domotique",
-        imgURL: "../../../public/assets/expertise/smart-house.jpg",
+        imgURL: "/assets/expertise/smart-house.jpg",
         listePF: ["Installation électrique", "Maintenance électrique", "Mise en conformité", "Rénovation électrique"]
     },
     3: {
         title: "Construction spécialisés",
-        imgURL: "../../../public/assets/expertise/tiler.jpg",
+        imgURL: "/assets/expertise/tiler.jpg",
         listePF: ["Installation électrique", "Maintenance électrique", "Mise en conformité", "Rénovation électrique"]
     },
     4: {
         title: "Plomberie",
-        imgURL: "../../../public/assets/expertise/plumber.jpg",
+        imgURL: "/assets/expertise/plumber.jpg",
         listePF: ["Installation électrique", "Maintenance électrique", "Mise en conformité", "Rénovation électrique"]
     },
     5: {
         title: "Ventilation",
-        imgURL: "../../../public/assets/expertise/drill.jpg",
+        imgURL: "/assets/expertise/drill.jpg",
         listePF: ["Installation électrique", "Maintenance électrique", "Mise en conformité", "Rénovation électrique"]
     },
 }

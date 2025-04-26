@@ -1,48 +1,107 @@
 import React from 'react';
-import { useState } from 'react';
+import Slider from "react-slick";
+import { FaArrowRight } from 'react-icons/fa';
+import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './Projets.css';
-import { FaArrowRight, FaAngleRight, FaAngleLeft } from 'react-icons/fa';
-import { useKeenSlider } from "keen-slider/react"
-import "keen-slider/keen-slider.min.css"
 
 const videoURL = '/assets/projet-bg.webm';
 
 const images = {
-  1: {
-    imgURL: '/assets/projet-1.jpg',
-  },
-  2: {
-    imgURL: '/assets/projet-2.jpg',
-  },
-  3: {
-    imgURL: '/assets/projet-3.jpg',
-  },
-  4: {
-    imgURL: '/assets/projet-2.jpg',
-  },
-  5: {
-    imgURL: '/assets/projet-1.jpg',
-  }
+  1: { imgURL: '/assets/projet-1.jpg' },
+  2: { imgURL: '/assets/projet-2.jpg' },
+  3: { imgURL: '/assets/projet-3.jpg' },
+  4: { imgURL: '/assets/projet-1.jpg' },
+  5: { imgURL: '/assets/projet-2.jpg' },
+};
+
+
+function SampleNextArrow(props) {
+  const { onClick } = props;
+  return (
+    <div
+      className="projets-slider-btn"
+      style={{ right: "-16px" }}
+      onClick={onClick}
+    >
+      <FaAngleRight size={32} />
+    </div>
+  );
 }
 
+function SamplePrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <div
+      className="projets-slider-btn"
+      onClick={onClick}
+      style={{ left: "-16px", zIndex: 1 }}
+    >
+      <FaAngleLeft size={32} />
+    </div>
+  );
+}
+
+
+
 function Projets() {
-  const [currentSlide, setCurrentSlide] = React.useState(0)
 
-  const [sliderRef, slider] = useKeenSlider({
-    slideChanged(s) {
-      setCurrentSlide(s.track.details.rel);
-    },
-    breakpoints: {
-      "(min-width: 300px)": {
-        slides: { perView: 1, spacing: 10 },
+  const settings = {
+    dots: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    appendDots: dots => (
+      <div
+      >
+        <ul style={{ margin: "0px", textAlign: 'center', padding: 0 }}> {dots} </ul>
+      </div>
+    ),
+    customPaging: i => (
+      <div
+        style={{
+        }}
+        className='projets-slider-dots'
+      >
+      </div>
+    ),
+    responsive: [
+      {
+        breakpoint: 1200,  // Match your 1200px media query
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
       },
-      "(min-width: 1000px)": {
-        slides: { perView: 3, spacing: 10 },
+      {
+        breakpoint: 768,   // Match your 768px media query
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
       },
-    },
-    slides: { perView: 1 },
-  })
+      {
+        breakpoint: 600,   // Between tablet and small phones
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 425,   // Match your 425px media query
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,    // ⬅️ Important: Center image nicely on very small screens
+          centerPadding: '20px' // ⬅️ Give a little space left and right
+        }
+      }
+    ]
 
+  }
   return (
     <div className="projets-container">
       <video autoPlay loop muted playsInline className="projets-bg-video">
@@ -52,42 +111,23 @@ function Projets() {
 
       <div className="projets-content">
         <h1>Nos Projets</h1>
-        <div className='projets-tout-projet-btn'>
-          <p>Tout nos projet</p>
+        <div className="projets-tout-projet-btn">
+          <p>Tous nos projets</p>
           <FaArrowRight />
         </div>
       </div>
 
-      <div className='projets-slider'>
 
-        <div className='projets-slider-container'>
-          <div className="projets-slider-btn" onClick={() => slider.current.prev()}>
-            <FaAngleLeft className='projets-slider-btn-icon' />
-          </div>
-          <div ref={sliderRef} className='keen-slider' >
-            {Object.keys(images).map((index) => (
-              <div className={`keen-slider__slide number-slide${index}}`} key={index}>
-                <img className='slider-img' src={images[index].imgURL} alt={`Project ${index}`} />
-              </div>
-            ))}
-          </div>
-          <div className="projets-slider-btn" onClick={() => slider.current.next()}>
-            <FaAngleRight className='projets-slider-btn-icon' />
-          </div>
-        </div>
-        <div className="projets-slider-dots">
-          {Object.keys(images).map((_, idx) => (
-            <button
-              title='go to next slide'
-              type='button'
-              key={idx}
-              onClick={() => slider.current?.moveToIdx(idx)}
-              className={`${currentSlide === idx ? 'active' : 'dot'}`}
-            />
+      <div className='slider-container'>
+        <Slider {...settings}>
+          {Object.entries(images).map(([key, value]) => (
+            <div key={key} className='carousel-image-wrapper'>
+              <img src={value.imgURL} alt={`Projet ${key}`} className="carousel-image" />
+            </div>
           ))}
-        </div>
+        </Slider>
       </div>
-    </div >
+    </div>
   );
 }
 

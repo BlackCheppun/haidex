@@ -1,6 +1,6 @@
 
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
 import Layout from './Layout'
 import Home from './pages/Home'
 import ServicePage from './pages/ServicesPage/ServicePage'
@@ -11,7 +11,7 @@ import ServiceContructionNeuve from './pages/ConstructionNeuvePage/ServiceContru
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route index element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path='/services/ConstructionNeuve' element={<ServiceContructionNeuve />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

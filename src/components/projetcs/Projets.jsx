@@ -49,7 +49,8 @@ function Projets() {
 
   const settings = {
     dots: true,
-    speed: 500,
+    speed: 300,
+    touchMove: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
@@ -95,8 +96,6 @@ function Projets() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: true,    // ⬅️ Important: Center image nicely on very small screens
-          centerPadding: '20px' // ⬅️ Give a little space left and right
         }
       }
     ]

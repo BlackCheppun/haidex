@@ -3,39 +3,18 @@ import './SavoirFr.css'
 import CardExpertise from './CardExpertise'
 
 
-const elements = {
+export const elements = {
     0: {
-        title: "Courant fort",
-        imgURL: "/assets/expertise/eletricity-tower.jpg",
-        listePF: ["Installation électrique", "Maintenance électrique", "Mise en conformité", "Rénovation électrique"]
+        title: "Consrtuction neuve",
+        imgURL: "/assets/expertise/electrician.jpg",
+        listePF: ["1. Tertiaire", "2. Logement", "3. Autre"]
     }
     ,
     1: {
-        title: "Courant faible",
-        imgURL: "/assets/expertise/electrician.jpg",
-        listePF: ["Installation électrique", "Maintenance électrique", "Mise en conformité", "Rénovation électrique"]
-    }
-    ,
-    2: {
-        title: "Domotique",
-        imgURL: "/assets/expertise/smart-house.jpg",
-        listePF: ["Installation électrique", "Maintenance électrique", "Mise en conformité", "Rénovation électrique"]
-    },
-    3: {
-        title: "Construction spécialisés",
-        imgURL: "/assets/expertise/tiler.jpg",
-        listePF: ["Installation électrique", "Maintenance électrique", "Mise en conformité", "Rénovation électrique"]
-    },
-    4: {
-        title: "Plomberie",
-        imgURL: "/assets/expertise/plumber.jpg",
-        listePF: ["Installation électrique", "Maintenance électrique", "Mise en conformité", "Rénovation électrique"]
-    },
-    5: {
-        title: "Ventilation",
+        title: "Réhabilitation",
         imgURL: "/assets/expertise/drill.jpg",
-        listePF: ["Installation électrique", "Maintenance électrique", "Mise en conformité", "Rénovation électrique"]
-    },
+        listePF: ["1. Tertiaire", "2. Logement", "3. Autre"]
+    }
 }
 
 

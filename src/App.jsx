@@ -11,7 +11,7 @@ import ServiceContructionNeuve from './pages/ConstructionNeuvePage/ServiceContru
 function App() {
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route index element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path='/services/ConstructionNeuve' element={<ServiceContructionNeuve />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 

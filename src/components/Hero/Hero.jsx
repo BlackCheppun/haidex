@@ -5,7 +5,6 @@ import Navbar from '../Navbar/Navbar'
 function Hero() {
   return (
     <div className='HeroContainer'>
-      < Navbar />
       <div className='HeroContent'>
         <div>
           <div className='HeroTextBlock'>

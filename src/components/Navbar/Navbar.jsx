@@ -14,10 +14,16 @@ function Navbar() {
             <div className="navbar">
                 <img src="/assets/white_logo_navbar.svg" alt="logo" />
                 <div className="navbar-links">
-                    <a className='navbar-link' href="#">Accueil</a>
-                    <a className='navbar-link' href="#">Expériences</a>
-                    <a className='navbar-link' href="#">Services</a>
-                    <a className='navbar-link' href="#">Clients</a>
+                    <a className='navbar-link' href="/">Accueil</a>
+                    <div className='navbar-service-dropdown'>
+                        <a className='navbar-link' href="/services/Renov">Services</a>
+                        <div className="navbar-service-dropdown-menu">
+                            <a href="/services/Renov">Rénovation/Réhabilitations</a>
+                            <a href="/services/ConstructionNeuve">Construction neuves</a>
+                        </div>
+                    </div>
+                    {/* <a className='navbar-link' href="#">Projets</a> */}
+                    <a className='navbar-link' href="#">A propos</a>
                     <a className='navbar-link' href="#">Nous contacter</a>
                 </div>
                 <button className="navbar-Hamburger" type='button' >
@@ -25,10 +31,10 @@ function Navbar() {
                 </button>
             </div>
             <div className='navbar-mobile' style={{ display: isOpen ? 'flex' : 'none' }}>
-                <a className='navbar-link-mobile' href="#">Accueil</a>
-                <a className='navbar-link-mobile' href="#">Expériences</a>
-                <a className='navbar-link-mobile' href="#">Services</a>
-                <a className='navbar-link-mobile' href="#">Clients</a>
+                <a className='navbar-link-mobile' href="/">Accueil</a>
+                <a className='navbar-link-mobile' href="/services">Services</a>
+                <a className='navbar-link-mobile' href="#">A propos</a>
+                {/* <a className='navbar-link-mobile' href="#">Projet</a> */}
                 <a className='navbar-link-mobile' href="#">Nous contacter</a>
             </div>
         </>

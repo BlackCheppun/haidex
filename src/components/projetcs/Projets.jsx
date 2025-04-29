@@ -50,7 +50,7 @@ function Projets() {
   const settings = {
     dots: true,
     speed: 300,
-    touchMove: false,
+    touchMove: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,

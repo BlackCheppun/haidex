@@ -1,29 +1,26 @@
 
 import './App.css'
-import Footer from './components/Footer'
-import Hero from './components/Hero/Hero'
-import AutoplayCarousel from './components/AutoPlayCarousel/AutoplayCarousel'
-import SavoirF from './components/SavoirFaire/SavoirF'
-import Projets from './components/projetcs/Projets'
-import Apropos from './components/Apropos/Apropos'
-import CenterBand from './components/CenterBand/CenterBand'
-import Actualite from './components/Actualites/Actualite'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './Layout'
+import Home from './pages/Home'
+import ServicePage from './pages/ServicesPage/ServicePage'
+import ServiceContructionNeuve from './pages/ConstructionNeuvePage/ServiceContructionNeuve'
+
+
 
 function App() {
 
   return (
-    <>
-      <Hero />
-      <div className="CentealDiv">
-        <AutoplayCarousel />
-        <SavoirF />
-        <Projets />
-        <Apropos />
-        <CenterBand />
-        <Actualite />
-      </div>
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} >
+          <Route index element={<Home />} />
+          <Route path='/services' element={<ServicePage />} />
+          <Route path='/services/Renov' element={<ServicePage />} />
+          <Route path='/services/ConstructionNeuve' element={<ServiceContructionNeuve />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

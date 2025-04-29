@@ -25,6 +25,8 @@ body, html {
   --color-gray-light : #F6F8F78C;
   --color-dark-blue : #010F39;
 
+  --color-green : #00925B;
+
 
   font-family: 'Roboto', system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;

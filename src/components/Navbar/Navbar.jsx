@@ -23,7 +23,7 @@ function Navbar() {
                         </div>
                     </div>
                     {/* <a className='navbar-link' href="#">Projets</a> */}
-                    <a className='navbar-link' href="#">A propos</a>
+                    <a className='navbar-link' href="/apropos">A propos</a>
                     <a className='navbar-link' href="#">Nous contacter</a>
                 </div>
                 <button className="navbar-Hamburger" type='button' >
@@ -33,7 +33,7 @@ function Navbar() {
             <div className='navbar-mobile' style={{ display: isOpen ? 'flex' : 'none' }}>
                 <a className='navbar-link-mobile' href="/">Accueil</a>
                 <a className='navbar-link-mobile' href="/services">Services</a>
-                <a className='navbar-link-mobile' href="#">A propos</a>
+                <a className='navbar-link-mobile' href="/apropos">A propos</a>
                 {/* <a className='navbar-link-mobile' href="#">Projet</a> */}
                 <a className='navbar-link-mobile' href="#">Nous contacter</a>
             </div>

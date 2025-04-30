@@ -1,0 +1,161 @@
+@import '../../index.css';
+
+.Apropos-section2-Title{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--color-primary-darken);
+}
+
+.Apropos-Page-Section2{
+    position: relative;
+    z-index: 0;
+    background-color: white;
+}
+
+.Apropos-Page-Section2::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/assets/projet-1.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+
+.Apropos-Page-Section2-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.Apropos-section2-Section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+
+
+.Apropos-section2-Section > img{
+    max-width: 414px;
+    width: 90%;
+    object-fit: cover;
+}
+
+.Apropos-section2-Section > div{
+    padding: 16px;
+    color: black;
+    flex: 1;
+    align-self: center;
+}
+
+.Apropos-section2-Section > div > h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-style: italic;
+
+}
+.Apropos-section2-Section > div > p{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.Apropos-section2-Section > div > p > span{
+    font-weight: 800;
+}
+
+.Apropos-section2-Section:nth-child(3){
+    flex-direction: row-reverse;
+    
+}
+
+.Apropos-section2-Section:nth-child(3) > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.Apropos-section2-Section > div > a{
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    align-self: flex-end;
+    padding: 1rem 2rem;
+    border-radius: 48px;
+    border: none;
+    background-color: var(--color-primary-darken);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 3em;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Apropos-section2-Section > div > a:hover{
+    background-color: var(--color-seconday);
+    color: white;
+    gap : 4em;
+}
+
+.Apropos-section2-Section-Text{
+    margin-top: 2rem;
+    color: black;
+    font-weight: 400;
+}
+
+.Apropos-section2-Section-Text > p > span{
+    font-weight: 800;
+}
+
+
+.Apropos-Section-Founder > img{
+    object-fit: cover;
+    border-radius: 100%;
+    max-width: 200px;
+}
+
+.Apropos-Section-Founder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 7em;
+    padding-bottom: 10em;
+    color: var(--color-primary-darken);
+}
+
+.Apropos-Section-Founder > div{
+    padding: 16px;
+    flex: 1;
+    align-self: center;
+}
+
+.Apropos-Section-Founder > div > p{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-left: 5px solid var(--color-primary-darken);
+}
+.Apropos-Section-Founder > div > div{
+    gap : 32px;
+    display: flex;
+    padding-top: 1rem;
+}
+
+.Apropos-Page-Section3-container{
+    background-color: white;
+}

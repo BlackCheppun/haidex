@@ -1,0 +1,95 @@
+@import '../../index.css';
+
+
+.Contact-page-Container{
+    position: relative;
+    z-index: 0;
+    background-color: white;
+}
+
+.Contact-page-Container::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/assets/projet-1.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+
+.Contact-page-Section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Contact-page-Section2 > h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2em;
+    color: var(--color-primary-darken);
+    text-align: center;
+}
+
+.Contact-page-Section2-Contact-Cards
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.Contact-page-Section2-Contact-Cards-Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 4rem;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Contact-page-Section2-Contact-Cards-Card > div{
+    background-color: var(--color-primary-darken);
+    padding: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact-paga-card-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    color : white;
+}
+
+
+.Contact-page-Section2-Contact-Cards-Card > span{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--color-primary-darken);
+}
+
+.Contact-page-Section2-Contact-Cards-Card > a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: var(--color-primary-darken);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    
+}

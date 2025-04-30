@@ -51,7 +51,7 @@
 
 .navbar-service-dropdown-menu{
     position: absolute;
-    top: 100%;
+    top: 2rem;
     left: 0;
     background-color: #009EE080;
     padding: 0.5rem 0;
@@ -75,10 +75,7 @@
     display: flex;
 }
 
-
-
 .navbar-links{
-
     display: none;
     justify-content: space-between;
     align-items: center;

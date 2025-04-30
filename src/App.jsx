@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import ServicePage from './pages/ServicesPage/ServicePage'
 import ServiceContructionNeuve from './pages/ConstructionNeuvePage/ServiceContructionNeuve'
 import AproposPage from './pages/AproposPage/AproposPage'
+import ContactPage from './pages/ContactPage/ContactPage'
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/services/Renov' element={<ServicePage />} />
           <Route path='/services/ConstructionNeuve' element={<ServiceContructionNeuve />} />
           <Route path='/apropos' element={<AproposPage />} />
+          <Route path='/contact' element={<ContactPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -24,7 +24,7 @@ function Navbar() {
                     </div>
                     {/* <a className='navbar-link' href="#">Projets</a> */}
                     <a className='navbar-link' href="/apropos">A propos</a>
-                    <a className='navbar-link' href="#">Nous contacter</a>
+                    <a className='navbar-link' href="/contact">Nous contacter</a>
                 </div>
                 <button className="navbar-Hamburger" type='button' >
                     <FaBars className='navbar-HamburgerIcon' size={24} color='#fff' onClick={() => toggleMenu()} />
@@ -35,7 +35,7 @@ function Navbar() {
                 <a className='navbar-link-mobile' href="/services">Services</a>
                 <a className='navbar-link-mobile' href="/apropos">A propos</a>
                 {/* <a className='navbar-link-mobile' href="#">Projet</a> */}
-                <a className='navbar-link-mobile' href="#">Nous contacter</a>
+                <a className='navbar-link-mobile' href="/contact">Nous contacter</a>
             </div>
         </>
     )

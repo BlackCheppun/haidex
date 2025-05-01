@@ -3,7 +3,7 @@
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 200px; /* or whatever height you want */
+  height: 150px; /* or whatever height you want */
 }
 
 .carousel-track {
@@ -25,13 +25,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   transition: transform 0.3s ease;
 }
 
 
 .carousel-card > img {
   object-fit: cover;
+  max-height: 50px;
 }
 
 @keyframes slide {

@@ -4,13 +4,19 @@ export const carouselItems = {
     },
 
     2: {
-        imgUrl: "/assets/carousel_item.png",
+        imgUrl: "/assets/carousel-bouygues.png",
     }
     ,
     3: {
-        imgUrl: "/assets/carousel-guinier-construction.png",
+        imgUrl: "/assets/carousel-coreal.png",
     },
     4: {
-        imgUrl: "/assets/carousel-sicra-ile-de-france.png",
+        imgUrl: "/assets/carousel-legendre.png",
     },
+    5: {
+        imgUrl: "/assets/carousel-vinci.png",
+    },
+    6: {
+        imgUrl: "/assets/carousel-w.png",
+    }
 }

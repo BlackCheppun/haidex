@@ -1,6 +1,18 @@
 .CentealDiv{
-    background-image: url('/assets/rickyrecap.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  position: relative;
+  z-index: 0;
+  background-color: white;
+}
+
+
+.CentealDiv::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/rickyrecap.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: -1;
+}

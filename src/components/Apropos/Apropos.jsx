@@ -38,7 +38,7 @@ function Apropos() {
                         <span className='highlight-main'>Notre équipe</span>
                         <span className='highlight-sub'>Des professionnels dans la matière</span>
 
-                        <div className="know-more-btn">
+                        <div className="know-more-btn" onClick={() => window.location.href = '/apropos'}>
                             <span>En savoir plus</span>
                             <FaArrowRight />
                         </div>

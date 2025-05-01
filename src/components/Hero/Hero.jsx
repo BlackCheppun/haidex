@@ -10,7 +10,7 @@ function Hero() {
           <div className='HeroTextBlock'>
             <img className='HeroTitle' src="/assets/haidex.svg" alt="haidex-title" />
             <p>Branché sur l'avenir </p>
-            <a className='heroKnowMore' href="#">En savoir plus</a>
+            <a className='heroKnowMore' href="/apropos">En savoir plus</a>
           </div>
         </div>
       </div>

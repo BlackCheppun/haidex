@@ -47,6 +47,8 @@
 
 .navbar-service-dropdown{
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-service-dropdown-menu{

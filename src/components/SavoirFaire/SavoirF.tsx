@@ -32,8 +32,6 @@ function SavoirF() {
                 )}
             </div>
 
-            <a className="SavoireFaire-btn" onClick={() => console.log("click")}>Découvrir Plus</a>
-
         </div>
     )
 }

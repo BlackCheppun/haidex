@@ -15,7 +15,7 @@ function Footer() {
                 <div className='FooterDescp'>
                     <p className='FooterDescpP'>Travaux d'installation électrique dans tous locaux.
                         Pour plus d'informations sur nos services veuillez nous contacter via nos services clients </p>
-                    <div className='FooterContactBtn'>Contact Now</div>
+                    <div className='FooterContactBtn' onClick={() => window.location.href = '/contact'}>Contact Now</div>
                 </div>
             </div>
 

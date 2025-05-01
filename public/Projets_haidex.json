@@ -1,0 +1,134 @@
+{
+  "projets": [
+    {
+      "image_projet": "/projets/image1.jpg",
+      "localisation": "Plateau de bureaux à Noisy-le-Sec (93)",
+      "client": {
+        "nom": "Groupe Guinier",
+        "logo": "/projets/logo1.png"
+      },
+      "travaux_realises": {
+        "CFO": "Installation des tableaux électriques, prises de force, éclairage LED à gestion centralisée.",
+        "CFA": "Mise en place du câblage informatique, réseau VDI, contrôle d’accès.",
+        "SSI": "Installation de détecteurs incendie, alarmes, blocs autonomes d’éclairage de sécurité (BAES)."
+      }
+    },
+    {
+      "image_projet": "/projets/image2.jpg",
+      "localisation": "69 logements à Puteaux (92)",
+      "client": {
+        "nom": "DESIMO",
+        "logo": "/projets/logo2.png"
+      },
+      "travaux_realises": {
+        "CFO": "Installation des systèmes électriques.",
+        "CFA": "Mise en place des interphones et réseaux courants faibles.",
+        "SSI": ""
+      }
+    },
+    {
+      "image_projet": "/projets/image3.jpg",
+      "localisation": "95 logements à Saint-Ouen (93) « MO »",
+      "client": {
+        "nom": "Helbul",
+        "logo": "/projets/logo3.png"
+      },
+      "travaux_realises": {
+        "CFO": "Incorporation et appareillage des circuits électriques.",
+        "CFA": "Mise en place de la vidéophonie et réseau VDI.",
+        "SSI": ""
+      }
+    },
+    {
+      "image_projet": "/projets/image4.jpg",
+      "localisation": "Chambres étudiantes à Drancy (93)",
+      "client": {
+        "nom": "Sicra",
+        "logo": "/projets/logo4.png"
+      },
+      "travaux_realises": {
+        "CFO": "Installation des tableaux divisionnaires et circuits électriques.",
+        "CFA": "Réseau de communication et contrôle d’accès.",
+        "SSI": ""
+      }
+    },
+    {
+      "image_projet": "/projets/image5.jpg",
+      "localisation": "Magasin Celio à Plaisir (78)",
+      "client": {
+        "nom": "C.P.E",
+        "logo": "/projets/logo5.png"
+      },
+      "travaux_realises": {
+        "CFO": "Installation électrique complète du magasin.",
+        "CFA": "Réseau de communication et câblage informatique.",
+        "SSI": ""
+      }
+    },
+    {
+      "image_projet": "/projets/image6.jpg",
+      "localisation": "Centre de formation à Strasbourg (67)",
+      "client": {
+        "nom": "Groupe Guinier",
+        "logo": "/projets/logo1.png"
+      },
+      "travaux_realises": {
+        "CFO": "Distribution électrique des salles et éclairage LED intelligent.",
+        "CFA": "Mise en place du câblage informatique et interphonie.",
+        "SSI": "Pose de déclencheurs manuels, sirènes d’évacuation et centrale de gestion SSI."
+      }
+    },
+    {
+      "image_projet": "/projets/image7.jpg",
+      "localisation": "Réhabilitation de 140 logements à Saint-Cyr-l’École (78)",
+      "client": {
+        "nom": "Bouygues / Al Gomes",
+        "logo": "/projets/logo6.png"
+      },
+      "travaux_realises": {
+        "CFO": "Remise aux normes des installations électriques.",
+        "CFA": "Rénovation des systèmes de communication et vidéophonie.",
+        "SSI": ""
+      }
+    },
+    {
+      "image_projet": "/projets/image8.jpg",
+      "localisation": "Plateau de bureaux à Rouen (76)",
+      "client": {
+        "nom": "Groupe Guinier",
+        "logo": "/projets/logo1.png"
+      },
+      "travaux_realises": {
+        "CFO": "Mise en conformité électrique, distribution des circuits d’éclairage et force.",
+        "CFA": "Installation des réseaux informatiques et interphonie.",
+        "SSI": "Mise en place de baies de brassage SSI et gestion des alarmes incendie."
+      }
+    },
+    {
+      "image_projet": "/projets/image9.jpg",
+      "localisation": "Chambres étudiantes à Drancy (93)",
+      "client": {
+        "nom": "CESA",
+        "logo": "/projets/logo7.png"
+      },
+      "travaux_realises": {
+        "CFO": "Installation des tableaux divisionnaires et éclairage de sécurité.",
+        "CFA": "Réseau informatique, contrôle d’accès et vidéosurveillance.",
+        "SSI": "Installation de détecteurs thermiques et optiques, alarmes générales et gestion des issues de secours."
+      }
+    },
+    {
+      "image_projet": "/projets/image10.jpg",
+      "localisation": "Réhabilitation des logements et tertiaire à Romainville (93)",
+      "client": {
+        "nom": "LEGENDRE",
+        "logo": "/projets/logo8.png"
+      },
+      "travaux_realises": {
+        "CFO": "Installation des tableaux divisionnaires et circuits électriques.",
+        "CFA": "Réseau de communication et contrôle d’accès.",
+        "SSI": ""
+      }
+    }
+  ]
+}

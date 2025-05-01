@@ -5,19 +5,15 @@ import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Projets.css';
+import { useEffect, useState } from 'react';
+
 
 const videoURL = '/assets/projet-bg.webm';
 
-const images = {
-  1: { imgURL: '/assets/projet-1.jpg' },
-  2: { imgURL: '/assets/projet-2.jpg' },
-  3: { imgURL: '/assets/projet-3.jpg' },
-  4: { imgURL: '/assets/projet-1.jpg' },
-  5: { imgURL: '/assets/projet-2.jpg' },
-};
-
 
 function SampleNextArrow(props) {
+
+
   const { onClick } = props;
   return (
     <div
@@ -47,6 +43,16 @@ function SamplePrevArrow(props) {
 
 function Projets() {
 
+  const [projets, setProjets] = useState([]);
+
+  const [selectedProjet, setSelectedProjet] = useState(null);
+
+  useEffect(() => {
+    fetch('/Projets_haidex.json')
+      .then((response) => response.json())
+      .then((data) => setProjets(data.projets))
+      .catch((error) => console.error('Error loading JSON:', error));
+  }, []);
   const settings = {
     dots: true,
     speed: 300,
@@ -119,12 +125,61 @@ function Projets() {
 
       <div className='slider-container'>
         <Slider {...settings}>
-          {Object.entries(images).map(([key, value]) => (
-            <div key={key} className='carousel-image-wrapper'>
-              <img src={value.imgURL} alt={`Projet ${key}`} className="carousel-image" />
+
+          {projets && projets.map((projet, index) => (
+            <div
+              key={index}
+              className='carousel-image-wrapper'
+              onClick={() => setSelectedProjet(projet)}
+            >
+              <img src={projet.image_projet} alt={`Projet ${index + 1}`} className="carousel-image" />
             </div>
           ))}
+
         </Slider>
+
+
+        {selectedProjet && (
+          <div className="projets-modal-backdrop" onClick={() => setSelectedProjet(null)}>
+            <div className="projets-modal" onClick={e => e.stopPropagation()}>
+
+              {/* Project Image */}
+              <img
+                src={selectedProjet.image_projet}
+                alt={selectedProjet.localisation}
+                className="projets-modal-image"
+              />
+
+              {/* Title */}
+              <h2 className="projets-modal-title">{selectedProjet.localisation}</h2>
+
+              {/* Client Info */}
+              <p className="projets-modal-client"><strong>Client :</strong> {selectedProjet.client.nom}</p>
+
+              {/* Client Logo (optional, if available) */}
+              {selectedProjet.client.logo && (
+                <img
+                  src={selectedProjet.client.logo}
+                  alt="Logo client"
+                  className="projets-modal-logo"
+                />
+              )}
+
+              {/* Travaux réalisés */}
+              <div className="projets-modal-travaux">
+                <p><strong>Travaux réalisés :</strong></p>
+                {Object.entries(selectedProjet.travaux_realises).map(([key, value]) => (
+                  value && (
+                    <p key={key}>
+                      <strong>{key} :</strong> {value}
+                    </p>
+                  )
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
       </div>
     </div>
   );

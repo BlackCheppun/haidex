@@ -14,6 +14,7 @@ function Hero() {
           </div>
         </div>
       </div>
+      <span className="HeroTrustedBy">Fait confiance par :</span>
     </div >
   )
 }

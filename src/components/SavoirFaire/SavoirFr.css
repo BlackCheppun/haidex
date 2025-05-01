@@ -67,18 +67,19 @@
     color: var(--color-primary-darken);
     padding: 8px;
     height: 0;
-    overflow-y: auto;
-    display: block;
+    overflow: hidden;
     transform: translateY(100%);
     transition: all 0.5s ease;
     opacity: 0;
 }
 
 .card-expertise-inner.show {
-    height: 100%;
+    height: auto;
+    max-height: 200px; /* Adjust max-height as needed */
     transform: translateY(0);
     opacity: 1;
 }
+
 
 .card-expertise-element {
     font-weight: 500;
@@ -98,10 +99,6 @@ ul {
     border-top-right-radius: 45px;
     padding-bottom: 16px;
     box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-.card-experstise-content-top.hovered {
-    height: 150px;
 }
 
 .card-experstise-content-top {

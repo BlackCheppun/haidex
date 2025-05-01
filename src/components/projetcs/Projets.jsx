@@ -116,10 +116,6 @@ function Projets() {
 
       <div className="projets-content">
         <h1>Nos Projets</h1>
-        <div className="projets-tout-projet-btn">
-          <p>Tous nos projets</p>
-          <FaArrowRight />
-        </div>
       </div>
 
 

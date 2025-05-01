@@ -42,7 +42,6 @@ function ServiceContructionNeuve() {
                                 <button type="button">Nous contacter</button>
                             </div>
                         </div>
-                        <button type='button' onClick={() => isOpen === "" ? setIsOpen("card1") : setIsOpen("")}>Plus</button>
                         <div className={`serviceConstruction-Section2-Card-Hidden ${isOpen === "card1" ? "shown" : ""}`}>
                             <ul>
                                 <li><span>Distribution courant fort:</span> Installation du réseau électrique principal permettant l'acheminement de l'électricité depuis le point de livraison jusqu'aux équipements (prises, éclairages, appareils...).Cela comprend les câbles, les gaines et leur cheminement dans le bâtiment. </li>
@@ -58,6 +57,7 @@ function ServiceContructionNeuve() {
                                 <li><span>TGBT (Tableau Général Basse Tension):</span> Mise en place du tableau central pour la distribution du courant fort dans les bâtiments tertiaires ou collectifs</li>
                             </ul>
                         </div>
+                        <button type='button' onClick={() => isOpen === "" ? setIsOpen("card1") : setIsOpen("")}>Plus</button>
                     </div>
                     <div className='serviceConstruction-Section2-Card-Container'>
                         <div className='serviceConstruction-Section2-Card'>
@@ -69,7 +69,6 @@ function ServiceContructionNeuve() {
                                 <button type="button">Nous contacter</button>
                             </div>
                         </div>
-                        <button type='button' onClick={() => isOpen === "" ? setIsOpen("card2") : setIsOpen("")}>Plus</button>
                         <div className={`serviceConstruction-Section2-Card-Hidden ${isOpen === "card2" ? "shown" : ""}`}>
                             <ul>
                                 <li><span>Contrôle d'accès:</span>  Installation de systèmes permettant de sécuriser l'accès aux bâtiments ou locaux (badges, digicodes, lecteurs biométriques, interphones, etc.). Ils assurent une gestion efficace des entrées et sorties. </li>
@@ -82,6 +81,7 @@ function ServiceContructionNeuve() {
 
                             </ul>
                         </div>
+                        <button type='button' onClick={() => isOpen === "" ? setIsOpen("card2") : setIsOpen("")}>Plus</button>
                     </div>
                     <div className='serviceConstruction-Section2-Card-Container'>
                         <div className='serviceConstruction-Section2-Card'>
@@ -93,7 +93,6 @@ function ServiceContructionNeuve() {
                                 <button type="button">Nous contacter</button>
                             </div>
                         </div>
-                        <button type='button' onClick={() => isOpen === "" ? setIsOpen("card3") : setIsOpen("")}>Plus</button>
                         <div className={`serviceConstruction-Section2-Card-Hidden ${isOpen === "card3" ? "shown" : ""}`}>
                             <ul>
                                 <li><span>Éclairage connecté:</span>  Mise en place de systèmes d'éclairage contrôlables via smartphone, interrupteurs sans fil ou assistant vocal. </li>
@@ -102,6 +101,7 @@ function ServiceContructionNeuve() {
                                 <li><span>Prises connectées:</span> Installation de prises intelligentes permettant de contrôler les appareils électriques à distance.</li>
                             </ul>
                         </div>
+                        <button type='button' onClick={() => isOpen === "" ? setIsOpen("card3") : setIsOpen("")}>Plus</button>
                     </div>
 
                 </div>

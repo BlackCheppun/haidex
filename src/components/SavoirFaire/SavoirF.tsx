@@ -7,13 +7,15 @@ export const elements = {
     0: {
         title: "Consrtuction neuve",
         imgURL: "/assets/expertise/electrician.jpg",
-        listePF: ["1. Tertiaire", "2. Logement", "3. Autre"]
+        listePF: ["1. Tertiaire", "2. Logement", "3. Autre"],
+        page: "/services/ConstructionNeuve"
     }
     ,
     1: {
         title: "Réhabilitation",
         imgURL: "/assets/expertise/drill.jpg",
-        listePF: ["1. Tertiaire", "2. Logement", "3. Autre"]
+        listePF: ["1. Tertiaire", "2. Logement", "3. Autre"],
+        page: "/services/Renov"
     }
 }
 
@@ -26,7 +28,7 @@ function SavoirF() {
             <div className='SavoirFaire-Elements'>
                 {Object.keys(elements).map((key) => {
                     return (
-                        <CardExpertise title={elements[key].title} imgURL={elements[key].imgURL} listePF={elements[key].listePF} key={key} /> // Pass the key as a prop to CardExpertise
+                        <CardExpertise link={elements[key].page} title={elements[key].title} imgURL={elements[key].imgURL} listePF={elements[key].listePF} key={key} /> // Pass the key as a prop to CardExpertise
                     )
                 }
                 )}

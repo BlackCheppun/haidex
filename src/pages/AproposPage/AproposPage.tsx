@@ -30,10 +30,9 @@ function AproposPage() {
                         <div>
                             <h2>C'est quoi Haidex ?</h2>
 
-                            <p><span>Haidex</span> à été fondé le 02 novembre 2018.
-                                Une société spécialisée dans le domaine du <span>tertiaire, construction neuf et rénovation</span></p>
+                            <p><span>Haidex</span> a su se forger une solide réputation en tant que partenaire de confiance, offrant une expertise approfondie dans tous les aspects de l'électricité.</p>
 
-                            <p>Aussi généralement, toutes opérations <span>industrielles, commerciales, financières, civiles, mobilières ou immobilières</span>, pouvant se rattacher directement ou indirectement à l'objet social ou à tout objet similaire ou connexe</p>
+                            <p>Que ce soit pour des installations, de la maintenance ou des réparations, nous garantissons des solutions sécurisées, conformes aux normes en vigueur et adaptées à vos besoins.</p>
                         </div>
 
                         <img src="/assets/AproposPage/electrician.jpg" alt="" />
@@ -41,11 +40,13 @@ function AproposPage() {
                     <div className='Apropos-section2-Section'>
 
                         <div>
-                            <h2>Que peut on faire pour vous</h2>
+                            <h2>Nos métiers</h2>
 
-                            <p>Chez <span>Haidex</span>, l'électricité est bien plus qu'une simple installation de câbles et de fils.</p>
+                            <p><span>Haidex</span> se spécialise en :</p>
 
-                            <p>Nous sommes les artisans passionnés qui illuminent vos <span>espaces de vie</span> de <span>travail</span> et de <span>loisirs</span>.</p>
+                            <p><span>Construction neuve :</span> Installation de systèmes électriques (courant fort et faible) pour bâtiments neufs, conformes et sécurisés.</p>
+                            <p><span>Rénovation / Réhabilitation :</span> Modernisation des installations électriques existantes pour plus de performance et de sécurité.</p>
+                            <p><span>ERP : </span>  Solutions électriques adaptées aux normes strictes des établissements recevant du public.</p>
 
                             <a href='/services'>Voir nos services
                                 <FaArrowRight />
@@ -57,6 +58,7 @@ function AproposPage() {
                     <div className='Apropos-section2-Section-Text'>
                         <p>Notre équipe dévouée est <span>spécialisée</span> dans tous les aspects de l'électricité, offrant une gamme complète de <span>services</span> pour répondre à vos besoins <span>résidentiels, commerciaux et industriels</span>.</p>
                         <p> Avec <span>50 collaborateurs</span> engagés sur toute la chaîne de valeur: <span>financement, études, réalisation et maintenance.</span></p>
+                        <p>La <span>satisfaction</span> de nos clients est dans notre ADN. Nous nous engageons à fournir des services d'une grande fiabilité, en privilégiant la transparence et l'efficacité à chaque étape de nos interventions.</p>
                     </div>
 
 
@@ -70,8 +72,9 @@ function AproposPage() {
                                 services d'une grande qualité, portés par le professionnalisme et la passion
                                 de nos équipes."</p>
                             <div>
-                                <FaInstagram size={24} />
-                                <FaLinkedin size={24} />
+
+                                <FaInstagram size={24} onClick={() => window.location.href = ""} />
+                                <FaLinkedin size={24} onClick={() => window.location.href = "https://www.linkedin.com/company/haidex/"} />
                                 <FaFacebook size={24} />
                             </div>
                         </div>

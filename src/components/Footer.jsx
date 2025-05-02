@@ -21,7 +21,7 @@ function Footer() {
 
             <div className='footerDetails'>
                 <div className='footerDetailsLogo'>
-                    <img className='FooterLogo' src={icon} alt="Logo" onClick={() => window.location.href = "/"} />
+                    <img className='FooterLogo' src="/assets/image.png" alt="Logo" onClick={() => window.location.href = "/"} />
                     <div className='footerSocials'>
                         <a className="footerSocialsIcons" href=""><FaInstagram /></a>
                         <a className="footerSocialsIcons" href=""><FaLinkedin /></a>

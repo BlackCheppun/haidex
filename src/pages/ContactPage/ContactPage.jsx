@@ -124,7 +124,7 @@ function ContactPage() {
                             </span>
                             <span className='contact-page-highlight-main'>Bienvenue à vous</span>
 
-                            <p><span>Domaine d'activité :</span> Traveau de Construction Spécialisés</p>
+                            <p><span>Domaine d'activité :</span> Travaux de construction spécialisés</p>
                             <p><span>Date de création :</span> 02/11/2018</p>
                             <p><span>Dirigeant :</span> Zulqarnain Haider Munawar</p>
                             <p><span>Adresse :</span> 2-4 Avenue du 6 juin 1944 95190 Goussainville</p>

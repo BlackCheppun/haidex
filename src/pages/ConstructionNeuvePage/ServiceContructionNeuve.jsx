@@ -39,7 +39,7 @@ function ServiceContructionNeuve() {
                                 <span>Courant fort</span>
                                 <p>Le courant fort regroupe l'ensemble des installations permettant l'alimentation électrique des bâtiments, qu'ils soient résidentiels, tertiaires ou industriels</p>
                                 <p>Nos équipes assurent la conception, l'installation et la mise en service d'infrastructures électriques fiables, performantes et conformes aux normes en vigueur.</p>
-                                <button type="button">Nous contacter</button>
+                                <button type="button" onClick={() => window.location.href = "/contact"}>Nous contacter</button>
                             </div>
                         </div>
                         <div className={`serviceConstruction-Section2-Card-Hidden ${isOpen === "card1" ? "shown" : ""}`}>
@@ -66,7 +66,7 @@ function ServiceContructionNeuve() {
                                 <span>Courant faible</span>
                                 <p>Le courant faible concerne l'ensemble des réseaux de communication, de sécurité et de transmission de données au sein du bâtiment.</p>
                                 <p>Nous réalisons des installations performantes et évolutives pour répondre aux besoins en téléphonie, informatique, alarme, fibre optique, et plus encore.</p>
-                                <button type="button">Nous contacter</button>
+                                <button type="button" onClick={() => window.location.href = "/contact"}>Nous contacter</button>
                             </div>
                         </div>
                         <div className={`serviceConstruction-Section2-Card-Hidden ${isOpen === "card2" ? "shown" : ""}`}>
@@ -90,7 +90,7 @@ function ServiceContructionNeuve() {
                                 <span>Domotique</span>
                                 <p>La domotique transforme votre bâtiment en un espace intelligent, confortable et économe en énergie. Grâce à des technologies connectées, vous pouvez piloter à distance l’éclairage, le chauffage, les volets ou encore les prises électriques depuis votre smartphone ou votre tablette.</p>
                                 <p>Ces solutions permettent non seulement de gagner en confort au quotidien, mais aussi de mieux gérer votre consommation d’énergie. Que ce soit pour programmer le chauffage, automatiser l’ouverture des volets ou éteindre les lumières à distance, la domotique vous offre un contrôle simple, pratique et efficace de votre environnement.</p>
-                                <button type="button">Nous contacter</button>
+                                <button type="button" onClick={() => window.location.href = "/contact"}>Nous contacter</button>
                             </div>
                         </div>
                         <div className={`serviceConstruction-Section2-Card-Hidden ${isOpen === "card3" ? "shown" : ""}`}>
@@ -108,7 +108,7 @@ function ServiceContructionNeuve() {
 
                 <div className='serviceConstruction-Section3-Container'>
                     <h1>Exemples de réalisations - Construction neuves</h1>
-                    <span>Vous pourrez peut êtres vous identifiez</span>
+                    <span>Vous pourrez peut-être vous identifiez</span>
                     <div className='ServicePageCenter-Section3-card'>
                         <div className='ServicePageCenter-Section3-card-InnerContainerTop' onClick={() => cardOpen === "card1" ? setCardOpen('') : setCardOpen('card1')} >
                             <span>Logement</span>

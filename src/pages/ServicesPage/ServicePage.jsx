@@ -104,7 +104,7 @@ function ServicePage() {
 
                 <div className="ServicePageCenter-Section3">
                     <h1>Exemples de réalisations - Réhabilitation</h1>
-                    <span>Vous pourrez peut êtres vous identifiez</span>
+                    <span>Vous pourrez peut-être vous identifiez</span>
                     <div className='ServicePageCenter-Section3-card'>
                         <div className='ServicePageCenter-Section3-card-InnerContainerTop' onClick={() => setIsOpenFirst(!isOpenFirst)} >
                             <span>Logement</span>

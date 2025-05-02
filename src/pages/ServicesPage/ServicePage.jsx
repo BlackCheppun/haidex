@@ -34,7 +34,7 @@ function ServicePage() {
                 <div className='ServicesPageCenter-Section2'>
                     <div className='ServicePageCenter-Section2-card'>
                         <div className='ServicePageCenter-Section2-card-InnerContainer'>
-                            <img className='ServicePageCenter-Section2-cardIMG' src="/assets/ServicesPageAssets/tiler.jpg" alt="" />
+                            <img className='ServicePageCenter-Section2-cardIMG' src="/assets/ServicesPageAssets/tiler1.jpg" alt="" />
                             <div>
                                 <span className="ServicePageCenter-Section2-CardTitle">Mise en conformité</span>
                                 <p>Nous adaptons les installations électriques aux normes en vigueur, notamment la norme <span style={{ fontWeight: 800 }}>NF C 15-100</span> pour le résidentiel.</p>
@@ -49,13 +49,13 @@ function ServicePage() {
                             </div>
                         </div>
                         <div className="ServicePageCenter-Section2-card-ButtonGroupe">
-                            <button type="button">En savoir plus</button>
-                            <button type="button">Nous contacter</button>
+                            <button type="button" onClick={() => window.location.href = "/services/ConstructionNeuve"}>En savoir plus</button>
+                            <button type="button" onClick={() => window.location.href = "/apropos"}>Nous contacter</button>
                         </div>
                     </div>
                     <div className='ServicePageCenter-Section2-card'>
                         <div className='ServicePageCenter-Section2-card-InnerContainer'>
-                            <img className='ServicePageCenter-Section2-cardIMG' src="/assets/ServicesPageAssets/drill.jpg" alt="" />
+                            <img className='ServicePageCenter-Section2-cardIMG' src="/assets/ServicesPageAssets/drill1.jpg" alt="" />
                             <div>
                                 <span className="ServicePageCenter-Section2-CardTitle">Mise en sécurité</span>
                                 <p>Lors d’une mise en sécurité, notre équipe réalise un audit technique de votre installation, identifie les zones à risque, puis intervient de manière ciblée pour éliminer les dangers immédiats. (Pour plus d'info sur notre savoir faire, cliquez sur'<span style={{ fontWeight: 800 }}>En savoir plus</span>').
@@ -71,8 +71,8 @@ function ServicePage() {
                             </div>
                         </div>
                         <div className="ServicePageCenter-Section2-card-ButtonGroupe">
-                            <button type="button">En savoir plus</button>
-                            <button type="button">Nous contacter</button>
+                            <button type="button" onClick={() => window.location.href = "/services/ConstructionNeuve"}>En savoir plus</button>
+                            <button type="button" onClick={() => window.location.href = "/apropos"}>Nous contacter</button>
                         </div>
                     </div>
                     <div className='ServicePageCenter-Section2-card'>
@@ -93,8 +93,8 @@ function ServicePage() {
                             </div>
                         </div>
                         <div className="ServicePageCenter-Section2-card-ButtonGroupe">
-                            <button type="button">En savoir plus</button>
-                            <button type="button">Nous contacter</button>
+                            <button type="button" onClick={() => window.location.href = "/services/ConstructionNeuve"}>En savoir plus</button>
+                            <button type="button" onClick={() => window.location.href = "/apropos"}>Nous contacter</button>
                         </div>
                     </div>
                 </div>
@@ -162,7 +162,7 @@ function ServicePage() {
                     <div className='SavoirFaire-Elements'>
                         {Object.keys(elements).map((key) => {
                             return (
-                                <CardExpertise title={elements[key].title} imgURL={elements[key].imgURL} listePF={elements[key].listePF} key={key} /> // Pass the key as a prop to CardExpertise
+                                <CardExpertise link={elements[key].page} title={elements[key].title} imgURL={elements[key].imgURL} listePF={elements[key].listePF} key={key} /> // Pass the key as a prop to CardExpertise
                             )
                         }
                         )}

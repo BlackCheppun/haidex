@@ -28,7 +28,7 @@ function AproposPage() {
                     <div className='Apropos-section2-Section'>
 
                         <div>
-                            <h2>C'est quoi Haidex ?</h2>
+                            <h2>C'est qui Haidex ?</h2>
 
                             <p><span>Haidex</span> a su se forger une solide réputation en tant que partenaire de confiance, offrant une expertise approfondie dans tous les aspects de l'électricité.</p>
 
@@ -57,7 +57,7 @@ function AproposPage() {
                     </div>
                     <div className='Apropos-section2-Section-Text'>
                         <p>Notre équipe dévouée est <span>spécialisée</span> dans tous les aspects de l'électricité, offrant une gamme complète de <span>services</span> pour répondre à vos besoins <span>résidentiels, commerciaux et industriels</span>.</p>
-                        <p> Avec <span>50 collaborateurs</span> engagés sur toute la chaîne de valeur: <span>financement, études, réalisation et maintenance.</span></p>
+                        <p> Notre équipe se compose de <span>25 collaborateurs</span> parmi lesquels plus de: <span>20 techniciens.</span> qualifiés. Certains d'entre eux occupent désormais des fonctions de chef d'équipe ou chef de chantier. Par ailleurs, nous comptons un chargé  d'affaires, supervisant deux conducteurs de travaux</p>
                         <p>La <span>satisfaction</span> de nos clients est dans notre ADN. Nous nous engageons à fournir des services d'une grande fiabilité, en privilégiant la transparence et l'efficacité à chaque étape de nos interventions.</p>
                     </div>
 

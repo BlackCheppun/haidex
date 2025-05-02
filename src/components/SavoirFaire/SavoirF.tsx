@@ -6,15 +6,15 @@ import CardExpertise from './CardExpertise'
 export const elements = {
     0: {
         title: "Consrtuction neuve",
-        imgURL: "/assets/expertise/electrician.jpg",
-        listePF: ["1. Tertiaire", "2. Logement", "3. Autre"],
+        imgURL: "/assets/expertise/card-consNeuve.jpg",
+        listePF: ["1. Tertiaire", "2. Logement", "3. ERP"],
         page: "/services/ConstructionNeuve"
     }
     ,
     1: {
         title: "Réhabilitation",
-        imgURL: "/assets/expertise/drill.jpg",
-        listePF: ["1. Tertiaire", "2. Logement", "3. Autre"],
+        imgURL: "/assets/expertise/card-Renov.jpg",
+        listePF: ["1. Tertiaire", "2. Logement", "3. ERP"],
         page: "/services/Renov"
     }
 }

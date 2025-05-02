@@ -34,7 +34,7 @@ function ServiceContructionNeuve() {
                 <div className='serviceConstruction-Section2-Container'>
                     <div className='serviceConstruction-Section2-Card-Container'>
                         <div className='serviceConstruction-Section2-Card'>
-                            <img src="/assets/ServicesPageAssets/focusEle.jpg" alt="" />
+                            <img src="/assets/ServicesPageAssets/focusEle1.jpg" alt="" />
                             <div className='serviceConstruction-Section2-Card-Text'>
                                 <span>Courant fort</span>
                                 <p>Le courant fort regroupe l'ensemble des installations permettant l'alimentation électrique des bâtiments, qu'ils soient résidentiels, tertiaires ou industriels</p>
@@ -61,7 +61,7 @@ function ServiceContructionNeuve() {
                     </div>
                     <div className='serviceConstruction-Section2-Card-Container'>
                         <div className='serviceConstruction-Section2-Card'>
-                            <img src="/assets/expertise/plumber.jpg" alt="" />
+                            <img src="/assets/ServicesPageAssets/courantFaibleImg.jpg" alt="" />
                             <div className='serviceConstruction-Section2-Card-Text'>
                                 <span>Courant faible</span>
                                 <p>Le courant faible concerne l'ensemble des réseaux de communication, de sécurité et de transmission de données au sein du bâtiment.</p>
@@ -88,8 +88,8 @@ function ServiceContructionNeuve() {
                             <img src="/assets/expertise/smart-house.jpg" alt="" />
                             <div className='serviceConstruction-Section2-Card-Text'>
                                 <span>Domotique</span>
-                                <p>La domotique transforme votre bâtiment en un espace intelligent, confortable et économe en énergie.</p>
-                                <p>Nous proposons des solutions connectées pour piloter à distance l'éclairage, le chauffage, les volets ou encore les prises électriques..</p>
+                                <p>La domotique transforme votre bâtiment en un espace intelligent, confortable et économe en énergie. Grâce à des technologies connectées, vous pouvez piloter à distance l’éclairage, le chauffage, les volets ou encore les prises électriques depuis votre smartphone ou votre tablette.</p>
+                                <p>Ces solutions permettent non seulement de gagner en confort au quotidien, mais aussi de mieux gérer votre consommation d’énergie. Que ce soit pour programmer le chauffage, automatiser l’ouverture des volets ou éteindre les lumières à distance, la domotique vous offre un contrôle simple, pratique et efficace de votre environnement.</p>
                                 <button type="button">Nous contacter</button>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ function ServiceContructionNeuve() {
                 </div>
 
                 <div className='serviceConstruction-Section3-Container'>
-                    <h1>Exemples de réalisations - Réhabilitation</h1>
+                    <h1>Exemples de réalisations - Construction neuves</h1>
                     <span>Vous pourrez peut êtres vous identifiez</span>
                     <div className='ServicePageCenter-Section3-card'>
                         <div className='ServicePageCenter-Section3-card-InnerContainerTop' onClick={() => cardOpen === "card1" ? setCardOpen('') : setCardOpen('card1')} >
@@ -162,7 +162,7 @@ function ServiceContructionNeuve() {
                     <div className='SavoirFaire-Elements'>
                         {Object.keys(elements).map((key) => {
                             return (
-                                <CardExpertise title={elements[key].title} imgURL={elements[key].imgURL} listePF={elements[key].listePF} key={key} /> // Pass the key as a prop to CardExpertise
+                                <CardExpertise link={elements[key].page} title={elements[key].title} imgURL={elements[key].imgURL} listePF={elements[key].listePF} key={key} /> // Pass the key as a prop to CardExpertise
                             )
                         }
                         )}

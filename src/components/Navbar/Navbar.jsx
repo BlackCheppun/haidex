@@ -12,7 +12,7 @@ function Navbar() {
     return (
         <>
             <div className="navbar">
-                <img src="/assets/white_logo_navbar.svg" alt="logo" />
+                <img src="/assets/white_logo_navbar.svg" alt="logo" onClick={() => window.location.href = "/"} />
                 <div className="navbar-links">
                     <a className='navbar-link' href="/">Accueil</a>
                     <div className='navbar-service-dropdown'>

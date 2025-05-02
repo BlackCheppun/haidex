@@ -17,6 +17,6 @@ export const carouselItems = {
         imgUrl: "/assets/carousel-vinci.png",
     },
     6: {
-        imgUrl: "/assets/carousel-w.png",
+        imgUrl: "/assets/carousel-3f.png",
     }
 }

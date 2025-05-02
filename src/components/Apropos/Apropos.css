@@ -121,7 +121,7 @@
     display: inline-flex;
     align-items: center;
     gap: 1.5rem;
-    background-color: #010F39;
+    background-color: var(--color-primary-darken);
     color: white;
     padding: 1rem 2.5rem;
     border-radius: 48px;
@@ -130,7 +130,13 @@
     margin-top: 1rem;
     cursor: pointer;
     width: fit-content;
-    transition: background 0.3s;
+    transition: all 0.3s;
+}
+
+.know-more-btn:hover{
+    background-color: var(--color-seconday);
+    color: white;
+    gap : 4em;
 }
 
 .text-paragraphs {

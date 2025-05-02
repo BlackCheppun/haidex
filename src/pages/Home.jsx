@@ -18,7 +18,7 @@ function Home() {
                 <Projets />
                 <Apropos />
                 <CenterBand />
-                <Actualite />
+                {/* <Actualite /> */}
             </div>
         </>
     )

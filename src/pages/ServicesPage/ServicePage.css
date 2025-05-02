@@ -269,8 +269,9 @@
 }
 
 .ServicePageCenter-Section3-card-img{
-    max-height: 386px;
-    object-fit: cover;
+    width: 386px;
+    height: 386px;
+    object-fit: fill;
     border-radius: 24px;
 
 }

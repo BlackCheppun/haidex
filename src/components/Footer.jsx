@@ -1,5 +1,5 @@
 import React from 'react'
-import icon from "../assets/footerLogo.svg"
+import icon from "/logo.svg"
 import "./footer.css"
 import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 
@@ -21,7 +21,7 @@ function Footer() {
 
             <div className='footerDetails'>
                 <div className='footerDetailsLogo'>
-                    <img className='FooterLogo' src={icon} alt="Logo" />
+                    <img className='FooterLogo' src={icon} alt="Logo" onClick={() => window.location.href = "/"} />
                     <div className='footerSocials'>
                         <a className="footerSocialsIcons" href=""><FaInstagram /></a>
                         <a className="footerSocialsIcons" href=""><FaLinkedin /></a>

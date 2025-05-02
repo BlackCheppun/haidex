@@ -56,6 +56,12 @@ p {
     border-radius: 100px;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.FooterContactBtn:hover{
+    background-color: var(--color-seconday);
+    transform: scale(1.05);
 }
 
 .FooterDescpP {
@@ -119,6 +125,7 @@ p {
 
 .FooterLogo {
     width: 169px;
+    cursor: pointer;
 }
 
 

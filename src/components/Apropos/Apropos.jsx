@@ -13,9 +13,6 @@ function Apropos() {
                     <img src="/assets/founder-transparent.png" alt="Fondateur" />
                     <span className='founder-name'>Zulqarnain Haider MUNAWAR</span>
                     <span className='founder-title'>Chef d'entreprise</span>
-                    <p>
-                        Travaux de construction spécialisés, services financiers hors assurance, activités immobilières.
-                    </p>
                     <div className='founder-socials'>
                         <a className='founder-social-btn' href="#" aria-label="Facebook">
                             <FaFacebook />
@@ -46,10 +43,7 @@ function Apropos() {
 
                     <div className='text-paragraphs'>
                         <p>
-                            Haidex est spécialisé dans l'électricité en construction neuve. Doté d’un vrai savoir-faire et d’un personnel dévoué, nous œuvrons sur plusieurs projets.
-                        </p>
-                        <p>
-                            En tant que chef d’entreprise depuis plusieurs années, j’ai développé un vrai sens de l’entrepreneuriat, de gestion des équipes et des compétences.
+                            Nous disposons d’une flotte d’utilitaires entièrement équipés, régulièrement approvisionnés selon les besoins, ce qui garantit des interventions rapides et efficaces. Dans une démarche respectueuse de l’environnement, nos chargés d'affaires et conducteurs de travaux utilisent des véhicules électriques ou hybrides, et la direction est exclusivement équipée en véhicules électriques.
                         </p>
 
                         <span className='founder-name-inline'>Zulqarnain Haider Munawar</span>

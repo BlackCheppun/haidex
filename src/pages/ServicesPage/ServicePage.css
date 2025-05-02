@@ -3,7 +3,7 @@
 
 .service-page-HeroContainer {
     position: relative;
-    background-image: url('/assets/construction_works.png');
+    background-image: url('/assets/construction_works2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -344,7 +344,7 @@
     .ServicePageCenter-Section2-CardTitle,
     .ServicePageCenter-Section3 > h1,
     .ServicePageCenter-Section4 > h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .ServicePageCenter-Section1-text {

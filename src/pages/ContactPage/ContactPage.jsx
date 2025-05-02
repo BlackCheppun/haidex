@@ -86,8 +86,8 @@ function ContactPage() {
 
                                 <FaPhoneAlt className='Contact-paga-card-icon' />
                             </div>
-                            <span>+33 1 75 41 07 29</span>
-                            <a href="tel:+33175410729">Contactez maintenant</a>
+                            <span>+33 1 34 19 65 76</span>
+                            <a href="tel:+33134196576">Contactez maintenant</a>
                         </div>
                         <div className='Contact-page-Section2-Contact-Cards-Card'>
                             <div>
@@ -125,10 +125,10 @@ function ContactPage() {
                             <span className='contact-page-highlight-main'>Bienvenue à vous</span>
 
                             <p><span>Domaine d'activité :</span> Traveau de Construction Spécialisés</p>
-                            <p><span>Date de création :</span> 13/01/2023</p>
-                            <p><span>Dirigeant :</span> Zulqarnain Munawar</p>
+                            <p><span>Date de création :</span> 02/11/2018</p>
+                            <p><span>Dirigeant :</span> Zulqarnain Haider Munawar</p>
                             <p><span>Adresse :</span> 2-4 Avenue du 6 juin 1944 95190 Goussainville</p>
-                            <p><span>Numéro de téléphone :</span>+33 17 54 10 729 </p>
+                            <p><span>Numéro de téléphone :</span>+33 1 34 19 65 76 </p>
                             <p><span>Mail :</span>contact@haidex.fr</p>
 
 

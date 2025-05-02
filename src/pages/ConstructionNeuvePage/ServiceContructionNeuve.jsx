@@ -34,7 +34,7 @@ function ServiceContructionNeuve() {
                 <div className='serviceConstruction-Section2-Container'>
                     <div className='serviceConstruction-Section2-Card-Container'>
                         <div className='serviceConstruction-Section2-Card'>
-                            <img src="/assets/ServicesPageAssets/focusEle1.jpg" alt="" />
+                            <img src="/assets/ServicesPageAssets/courantFaibleImg.jpg" alt="" />
                             <div className='serviceConstruction-Section2-Card-Text'>
                                 <span>Courant fort</span>
                                 <p>Le courant fort regroupe l'ensemble des installations permettant l'alimentation électrique des bâtiments, qu'ils soient résidentiels, tertiaires ou industriels</p>
@@ -61,7 +61,7 @@ function ServiceContructionNeuve() {
                     </div>
                     <div className='serviceConstruction-Section2-Card-Container'>
                         <div className='serviceConstruction-Section2-Card'>
-                            <img src="/assets/ServicesPageAssets/courantFaibleImg.jpg" alt="" />
+                            <img src="/assets/ServicesPageAssets/CFI.jpg" alt="" />
                             <div className='serviceConstruction-Section2-Card-Text'>
                                 <span>Courant faible</span>
                                 <p>Le courant faible concerne l'ensemble des réseaux de communication, de sécurité et de transmission de données au sein du bâtiment.</p>

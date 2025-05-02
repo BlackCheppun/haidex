@@ -103,8 +103,8 @@
 
 .serviceConstruction-Section2-Card > img{
     width: 100%;
-    max-height : 424px;
-    max-width : 380px;
+    height : 20rem;
+    max-width : 320px;
     border-radius: 16px;
     object-fit: cover;
 }

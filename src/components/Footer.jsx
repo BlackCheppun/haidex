@@ -34,8 +34,8 @@ function Footer() {
                 </div>
                 <div className='footerContacts'>
                     <h2 className='footerSubTitle'>Appelez nous</h2>
-                    <a href="tel:+33 17 54 10 72">+33 17 54 10 729</a>
-                    <a href="tel:+33 7 53 30 69 13">+33 7 53 30 69 13</a>
+                    <a href="tel:+33134196576">+33 1 34 19 65 76</a>
+                    <a href="tel:+33753306913">+33 7 53 30 69 13</a>
                     <a href="mailto:contact@haidex.fr">contact@haidex.fr</a>
                 </div>
                 <div className='footerTerms'>

@@ -18,5 +18,14 @@ export const carouselItems = {
     },
     6: {
         imgUrl: "/assets/carousel-3f.png",
+    },
+    7: {
+        imgUrl: "/assets/carousel-eiffage.png",
+    },
+    8: {
+        imgUrl: "/assets/carousel-sicra-ile-de-france.png",
+    },
+    9: {
+        imgUrl: "/assets/carousel-bosch.png",
     }
 }
